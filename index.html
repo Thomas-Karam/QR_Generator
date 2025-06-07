@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="keywords" content="QR, Qr Generator, link">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="description" content="Create a QR code by providing us with a link.">
+            <title>QR Generator</title>
+            <link rel="shortcut icon" href="Logo.ico">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      </head>
+      <body>
+            <main>
+                  <h2 class="fas fa-qrcode"> QR Generator</h2>
+                  <div class="input">
+                        <i class="fas fa-link"></i>
+                        <input type="url" name="" id="qr_url" placeholder="Enter Url" autofocus>
+                  </div>
+                  <button type="button" class="fas fa-lightbulb" onclick="qr_img.src='https://api.qrserver.com/v1/create-qr-code/?size=150x150&data='+qr_url.value"> Generate</button>
+                  <div class="qr_img">
+                        <p> Scan QR</p>
+                        <img src="" alt="QR Code" id="qr_img">
+                  </div>
+            </main>
+            <footer>&copy;2025 | TK9. All rights reserved.</footer>
+      </body>
+</html>
